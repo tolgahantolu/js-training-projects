@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+button{
+	background: transparent;
+	border: none;
+}
+
+.slider-container {
+	width: 80vw;
+	margin: 0 auto;
+	height: 100%;
+	max-width: 80rem;
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin-top: 4rem;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	transition: all 0.2s ease;
+	text-align: center;
+}
+
+.slide-img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.btn-container .btn-next,
+.btn-container .btn-prev{
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 18px;
+	background-color: #ff503f;
+	color: #fafaf9;
+	padding: 15px 25px;
+	border: 2px solid #1c1d1c;
+	border-radius: 10px;
+}
+
+.btn-container .btn-next{
+	margin-right: 75px;
+}
