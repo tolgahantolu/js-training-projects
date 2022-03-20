@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping List</title>
+
+	<!-- fontawesome 4.7 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+	<section class="container">
+		<!-- form -->
+		<form class="list-form">
+			<h4 class="message"></h4>
+			<h2>Shopping List</h2>
+			<div class="form-control">
+				<input type="text" id="form-input" placeholder="add item...">
+				<button type="submit" class="submit-btn">submit</button>
+			</div>
+		</form>
+
+		<!-- list -->
+		<div class="list-container">
+			<div class="shopping-list"></div>
+			<button class="clear-btn">clear items</button>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
